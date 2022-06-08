@@ -1,0 +1,31 @@
+.partners-section { 
+  padding: 102px 0 92px;
+  background-color: $gray-40;
+
+  .secton-heading {
+    margin-bottom: 47px;
+
+    h3 {
+      color: $white;
+    }
+  }
+}
+
+.partners-img-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+
+  @include media('>=desktop') {
+    justify-content: space-between;
+  }
+
+  .partners-column {
+    padding: 0 10px 10px;
+  }
+
+  .partners-img:hover {
+    background: #434a4f;
+  }
+}

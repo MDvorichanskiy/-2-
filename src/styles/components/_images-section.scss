@@ -1,0 +1,16 @@
+.images-section {
+  padding: 0px 0px 150px;
+}
+
+.images-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .img-column {
+    width: 25%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

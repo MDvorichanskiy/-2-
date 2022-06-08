@@ -1,0 +1,55 @@
+.information-section {
+  padding: 150px 0 118px;
+
+  .container {
+    max-width: 1186px;
+  }
+} 
+
+.information-colums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+  
+  .inform-column {
+    padding: 0px 15px;
+
+    @include media('>=tablet') {
+      width: 50%;
+    }
+    
+    @include media('>=desktop') {
+      width: 33.33%;
+    }
+  }
+}
+
+.inform-card {
+  padding: 57px 0 61px;
+  max-width: 356px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: $gray-07;
+  min-height: 250px;
+
+  .information-text {
+    display: block;
+    font-family: $secondary-font-sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    margin: 24px 48px 0;
+    min-width: 224px;
+
+    @include media('>=laptop') {
+      margin: 24px 63px 0;
+    }
+  }
+}
+
+.inform-card.inform-hover:hover {
+  background: $gray-70;
+}
+

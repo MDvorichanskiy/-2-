@@ -1,0 +1,32 @@
+.answers-section {
+  padding: 0 0 110px;
+
+  .section-heading{
+    margin-bottom: 49px;
+  }
+}
+
+.details-inner {
+  padding: 0 7px;
+}
+
+.detail {
+  margin-bottom: 10px;
+  max-width: 730px;
+  
+  p {
+    margin: 0 0 34px;
+  }
+  .summary {
+    font-family: $secondary-font-sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $red-F7;
+    margin-bottom: 23px;
+
+    @include media('>=tablet') {
+      font-size: 24px;
+    }
+  }
+}

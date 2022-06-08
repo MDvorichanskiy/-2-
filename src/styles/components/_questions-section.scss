@@ -1,0 +1,39 @@
+.questions-section {
+  background: $red-F7;
+  padding: 28px 0;
+
+  .questions-inform {
+
+    @include media('>=desktop') {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .section-heading {
+    max-width: 587px;
+    margin-bottom: 10px;
+
+    .section-heading-text {
+      font-family: $secondary-font-sans-serif;
+      font-size: 18px;
+      color: $white;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+
+      @include media('>=tablet') {
+        font-size: 24px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 17px;
+
+    .btn-img {
+      margin-right: 15px;
+      vertical-align: baseline;
+    }
+  }
+}
+

@@ -1,0 +1,66 @@
+.history-section {
+  margin: -175px 0 0;
+  padding: 0 0 50px;
+
+  @include media('>=desktop') {
+    margin: -175px 0 0 30px;
+  }
+}
+
+.history-columns {
+  background: $gray-07;
+  max-width: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  @include media('>=desktop') {
+    padding: 0 115px;
+  }
+
+  .history-columns-inner {
+    width: 25%;
+    padding: 0 10px;
+  }
+}
+
+.column-history {
+  padding: 74px 0 0;
+  min-height: 300px;
+  max-width: 220px;
+
+  .title {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: $secondary-font-sans-serif;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    
+    @include media('>=tablet') {
+      font-size: 36px;
+    }
+
+    mark {
+      font-size: 48px;
+      color: #F7654A;
+      background-color: transparent;
+      display: block;
+      line-height: 1;
+      margin-bottom: 21px;
+
+      @include media('>=tablet') {
+        font-size: 72px;
+      }
+    }
+    
+    span {
+      font-size: 18px;
+      display: block;
+      color: #999999;
+    }
+  }
+}
+
+

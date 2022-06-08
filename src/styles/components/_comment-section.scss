@@ -1,0 +1,41 @@
+.comment-section {
+  padding: 150px 0 114px;
+
+  .information-colums {
+    justify-content: center;
+
+    @include media('>=desktop') {
+      justify-content: space-between;
+    }
+  }
+}
+
+.comment-card {
+  max-width: 356px;
+  margin-bottom: 30px;
+
+  .inform-card {
+    text-align: left;
+    padding: 35px 30px 0;
+    margin-bottom: 33px;
+
+    .coment-text {
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 20px 0 25px;
+    }
+  }
+
+  .contact-person {
+    font-family: $secondary-font-sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: $black;
+
+    mark {
+      background-color: transparent;
+      color: $red-F7;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the common layout of the site
+// -----------------------------------------------------------------------------
+.container {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  width: 100%;
+
+  @include media('>=tablet') {
+    padding-left: rem-calc(38px);
+    padding-right: rem-calc(38px);
+    background-image: url();
+    
+  }
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.wrapper-inner {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  /* stylelint-disable */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  -ms-grid-template-columns: minmax(0, 1fr);
+  -ms-grid-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+
+  .header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .main {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .footer {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  /* stylelint-enable */
+}
+
+// .news-section {
+//   background: #0f0;
+
+//   @include media('>=tablet') {
+//     background: #0000;
+//   }
+// }
+
+// my style
+main {
+background-image: url();
+background-size: 100%;
+}
+
+
+.social-icons {
+  text-align: right;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
+
+.block1 {
+  float: right;
+}
+
+.block2 {
+  float: left;
+}
+ 
+// my styles
+
+
+

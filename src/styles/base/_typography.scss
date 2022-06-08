@@ -1,0 +1,152 @@
+// -----------------------------------------------------------------------------
+// This file contains typography styles.
+// -----------------------------------------------------------------------------
+/* stylelint-disable */
+/*
+  Set up a decent box model on the root element
+*/
+
+html {
+  font-size: $rem-base;
+}
+
+/*
+  Basic typography style for copy text
+*/
+body {
+  color: $body-text-color;
+  background-color: $body-background-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+  min-width: $base-min-width;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/*
+  Basic styles for links
+*/
+a {
+  @include animate(color);
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+ul,
+ol,
+dl,
+p {
+  margin: 0 0 $paragraph-margin-bottom;
+}
+
+#{$headings},
+.h {
+  font-family: $secondary-font-sans-serif;
+  font-weight: $headings-font-weight;
+  line-height: 1.48;
+  margin: 0 0 1.075rem;
+  color: $headings-color;
+  text-transform: uppercase;
+}
+
+h1,
+.h1 {
+  font-size: $h1-font-size;
+  letter-spacing: 1px;
+  color: $white;
+
+  @include media('>=desktop') {
+    font-size: rem-calc(64px)
+  }
+}
+
+h2,
+.h2 {
+  color: $white;
+  font-size: $h2-font-size;
+  letter-spacing: 2.4px;
+  margin-bottom: 10px;
+
+  @include media('>=tablet') {
+    font-size: 3rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+  font-size: $h4-font-size;
+  line-height: 1.2;
+
+  @include media('>=tablet') {
+    font-size: rem-calc(27px);
+    line-height: 1.11;
+  }
+}
+
+h5,
+.h5 {
+  font-size: $h5-font-size;
+  line-height: 1.36;
+
+  @include media('>=desktop') {
+    font-size: rem-calc(24px);
+    line-height: 1.46;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $h6-font-size;
+  line-height: 1.3;
+}
+
+.section-heading {
+  margin-bottom: 60px;
+}
+
+.section-heading.text-center {
+  padding: 0;
+
+  @include media('>=desktop') {
+    padding: 0 17%;
+  }
+}
+
+%ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ellipsis {
+  @extend %ellipsis;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}

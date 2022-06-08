@@ -1,0 +1,89 @@
+// .intro-section {
+//   background-position: 50% 50%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   @include media('>=tablet') {
+//     margin: rem-calc(0 38);
+//   }
+
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: linear-gradient(135deg, rgba($black, 0.8) 0%, rgba($black, 0.1) 20%, rgba($black, 0.1) 100%);
+//   }
+
+//   .intro-inner {
+//     position: relative;
+//     z-index: 4;
+//     display: flex;
+//     align-items: flex-end;
+//     min-height: rem-calc(517);
+//     color: $white;
+//     padding: rem-calc(60 6 109);
+
+//     @include media('>=tablet') {
+//       min-height: rem-calc(594);
+//       padding: rem-calc(60 33 94);
+//     }
+
+//     @include media('>=desktop') {
+//       padding: rem-calc(60 0 211);
+//       min-height: rem-calc(808);
+//     }
+//   }
+
+//   .intro-heading {
+//     text-align: left;
+//     color: $white;
+//     max-width: rem-calc(500);
+//     letter-spacing: 0.2px;
+
+//     @include media('>=desktop') {
+//       max-width: rem-calc(523);
+//     }
+//   }
+
+//   .display-1 {
+
+//     font-weight: 400;
+//     margin: rem-calc(0 0 31);
+//     line-height: 1.1;
+
+//     @include media('>=tablet') {
+//       margin: rem-calc(0 0 12);
+//     }
+
+//     @include media('>=desktop') {
+//       margin: rem-calc(0 0 23);
+//     }
+
+//     span {
+//       font-size: rem-calc(28);
+
+//       @include media('>=tablet') {
+//         font-size: rem-calc(60);
+//       }
+//     }
+//   }
+// }
+
+.intro-section {
+  background-image: url(/src/images/Rectangle.png);
+  background-repeat: no-repeat;
+  padding: 194px 0 280px;
+  margin: -100px 0 0;
+
+  .section-heading p {
+    font-family: $secondary-font-sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+

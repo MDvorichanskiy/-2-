@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site
+// -----------------------------------------------------------------------------
+.footer {
+  background: $gray-40;
+  padding: 28px 0 13px;
+
+  @include media('>=tablet') {
+    // color: $black;
+  }
+
+  @include media('>=desktop') {
+    // color: $black;
+  }
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+
+  @include media('>=tablet') {
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    color: $white;
+    padding: 0 10px;
+    margin-bottom: 15px;
+
+    .footer-inform {
+      color: $white;
+    }
+
+    .footer-inform:hover {
+      color: $red;
+    }
+  }
+}

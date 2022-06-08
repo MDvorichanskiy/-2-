@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site
+// -----------------------------------------------------------------------------
+.resize-active {
+  *,
+  *:before,
+  *:after {
+    transition: none !important;
+  }
+}
+
+.header {
+  padding: 20px;
+  z-index: 90;
+
+  .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+} 
+
+
+
+
+
+.header {
+
+  @include media('>=tablet') {
+    // color: $black;
+    }
+
+
+  @include media('>=desktop') {
+    // color: $black;
+  }
+}
