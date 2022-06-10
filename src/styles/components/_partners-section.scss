@@ -25,7 +25,11 @@
     padding: 0 10px 10px;
   }
 
-  .partners-img:hover {
-    background: #434a4f;
+  .partners-img {
+    display: block;
+
+    &:hover {
+      background: #434a4f;
+    }
   }
 }

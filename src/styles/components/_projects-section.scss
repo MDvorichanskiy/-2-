@@ -4,59 +4,55 @@
   .section-heading {
     margin-bottom: 52px;
   }
-  
+
   .cards {
     margin: 0 -15px;
-  
+
     @include media('>=tablet') {
       display: flex;
       justify-content: space-between;
     }
-  
+
     .column {
       padding: 0 15px;
     }
   }
-  
-  .card {
-    max-width: 370px;  
-  
-    .card-img {
-      margin-bottom: 40px;
-  
-      img {
-        width: 100%;
-      }
-    }
-  
-    .card-inform {
-      .card-text-title {
-        font-family: $secondary-font-sans-serif;
-        font-weight: 500;
-        font-size: 24px;
-        color: $gray-40;
-        position: relative;
-        padding-top: 24px;
-        display: block;
-        margin-bottom: 16px;
-      }
-  
-      .card-text-title::before {
-        content: '';
-        height: 6px;
-        width: 55px;
-        background-color: $red-F7;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+}
 
-      .card-text-title:hover {
-        color: $red;
-      }
+.card-prodject {
+  max-width: 370px;
+  margin: 0 auto;
+
+  .card-img {
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-text-title {
+    font-family: $secondary-font-sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: $gray-40;
+    position: relative;
+    padding-top: 24px;
+    display: block;
+    margin-bottom: 16px;
+
+    &:before {
+      content: '';
+      height: 6px;
+      width: 55px;
+      background-color: $red-F7;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      color: $red-F7;
     }
   }
 }
-
-
-

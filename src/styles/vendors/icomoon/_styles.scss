@@ -25,29 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
  
-.icon-youtube {
+.icon-quotes {
   &:before {
-    content: $icon-youtube; 
-  }
-}
-.icon-chevron-small-left {
-  &:before {
-    content: $icon-chevron-small-left;     
-  }
-}
-.icon-arrow-left {
-  &:before {
-    content: $icon-arrow-left; 
-  }
-}
-.icon-Chat {
-  &:before {
-    content: $icon-Chat; 
-  }
-}
-.icon-arrow-down {
-  &:before {
-    content: $icon-arrow-down; 
+    content: $icon-quotes; 
   }
 }
 .icon-facebook {
@@ -55,40 +35,9 @@
     content: $icon-facebook; 
   }
 }
-.icon-chevron-small-right {
+.icon-google {
   &:before {
-    content: $icon-chevron-small-right; 
-  }
-}
-.icon-arrow-right {
-  &:before {
-    content: $icon-arrow-right; 
-  }
-}
-.icon-heart {
-  &:before {
-    content: $icon-heart; 
-  }
-}
-.icon-instagram {
-  &:before {
-    content: $icon-instagram; 
-  }
-}
-.icon-Options {
-  &:before {
-    content: $icon-Options;     
-    color: #002856;
-  }
-}
-.icon-profile {
-  &:before {
-    content: $icon-profile; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
+    content: $icon-google; 
   }
 }
 .icon-twitter {
@@ -96,34 +45,35 @@
     content: $icon-twitter; 
   }
 }
-.icon-warning {
+.icon-watch {
   &:before {
-    content: $icon-warning; 
+    content: $icon-watch; 
   }
 }
-.icon-checked {
+.icon-phone {
   &:before {
-    content: $icon-checked; 
+    content: $icon-phone; 
   }
 }
-.icon-millenium {
+.icon-black-letter {
   &:before {
-    content: $icon-millenium; 
+    content: $icon-black-letter; 
   }
 }
-.icon-arrow-top {
+.icon-letter {
   &:before {
-    content: $icon-arrow-top; 
+    content: $icon-letter; 
   }
 }
-.icon-clock {
+.icon-point {
   &:before {
-    content: $icon-clock; 
+    content: $icon-point; 
   }
 }
-.icon-chevron-down {
+.icon-house {
   &:before {
-    content: $icon-chevron-down; 
+    content: $icon-house; 
   }
 }
+
 

@@ -1,29 +1,61 @@
 .comment-section {
-  padding: 150px 0 114px;
+  padding: 150px 0 116px;
 
-  .information-colums {
-    justify-content: center;
+  .container {
+    max-width: 1187px;
+  }
 
+  .section-heading {
+    margin-bottom: 62px;
+  }
+}
+
+.comment-colums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+
+  @include media('>=desktop') {
+    justify-content: space-between;
+  }
+  
+  .comment-column {
+    display: flex;
+    padding: 0px 15px;
+
+    @include media('>=tablet') {
+      width: 50%;
+    }
+    
     @include media('>=desktop') {
-      justify-content: space-between;
+      width: 33.33%;
     }
   }
 }
 
+
 .comment-card {
   max-width: 356px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
-  .inform-card {
-    text-align: left;
-    padding: 35px 30px 0;
-    margin-bottom: 33px;
+  .comment-text-inner {
+    background: $gray-07;
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
 
-    .coment-text {
-      font-size: 14px;
-      line-height: 1.5;
-      padding: 20px 0 25px;
-    }
+  .comment-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 24px 32px;
+  }
+  
+  .coment-img {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: $red-F7;
   }
 
   .contact-person {
@@ -32,10 +64,9 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     color: $black;
+  }
 
-    mark {
-      background-color: transparent;
-      color: $red-F7;
-    }
+  .contact-person.person-inform {
+    color: $red-F7;
   }
 }

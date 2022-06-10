@@ -28,13 +28,13 @@
     color: $white;
     padding: 0 10px;
     margin-bottom: 15px;
+  }
 
-    .footer-inform {
-      color: $white;
-    }
-
-    .footer-inform:hover {
-      color: $red;
+  .footer-inform {
+    color: $white;
+    
+    &:hover {
+      color: $red-F7;
     }
   }
 }

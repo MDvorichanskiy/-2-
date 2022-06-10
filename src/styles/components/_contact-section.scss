@@ -35,12 +35,18 @@
   letter-spacing: 0.5px;
   text-align: center;
   max-width: 330px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 
   .contact-img {
-    text-align: center;
-    height: 49px;
-    margin-bottom: 15px;
+    display: block;
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .contact-img-letter {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 26px;
   }
 
   .contact-inform {
@@ -53,10 +59,10 @@
 
     .contact-mail {
       color: $red-F7;
-    }
-
-    .contact-mail:hover {
-      color: $blue-4a;
+      
+      &:hover {
+        color: $blue-4a;
+      }
     }
   }
 }

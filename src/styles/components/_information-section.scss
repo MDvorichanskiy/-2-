@@ -1,8 +1,12 @@
-.information-section {
-  padding: 150px 0 118px;
+  .information-section {
+  padding: 150px 0 122px;
 
   .container {
     max-width: 1186px;
+  }
+
+  .section-heading {
+    margin-bottom: 55px;
   }
 } 
 
@@ -13,7 +17,9 @@
   margin: 0 -15px;
   
   .inform-column {
+    display: flex;
     padding: 0px 15px;
+    margin: 0 auto;
 
     @include media('>=tablet') {
       width: 50%;
@@ -26,30 +32,34 @@
 }
 
 .inform-card {
-  padding: 57px 0 61px;
-  max-width: 356px;
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 57px 55px 60px;
+  margin-bottom: 28px;
   background: $gray-07;
-  min-height: 250px;
+  max-width: 350px;
+
+  .inform-img {
+    font-size: 48px;
+    color: $red-F7;
+    margin-bottom: 28px;
+  }
 
   .information-text {
-    display: block;
+    text-align: center;
     font-family: $secondary-font-sans-serif;
     font-weight: 500;
     font-size: 21px;
     line-height: 1.4;
     letter-spacing: 0.4px;
-    margin: 24px 48px 0;
-    min-width: 224px;
-
-    @include media('>=laptop') {
-      margin: 24px 63px 0;
-    }
+  }
+  
+  &:hover {
+    @include animate(background-color color);
+    background-color: $gray-70;
   }
 }
 
-.inform-card.inform-hover:hover {
-  background: $gray-70;
-}
 
